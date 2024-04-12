@@ -24,6 +24,8 @@ Route::get('/modules/{id}/lessons', [\App\Http\Controllers\LessonController::cla
 
 Route::get('/lessons/{id}', [\App\Http\Controllers\LessonController::class, 'show']);
 
+Route::get('/supports', [\App\Http\Controllers\SupportController::class, 'index']);
+
 
 Route::get('/', function() {
     return response()->json([
